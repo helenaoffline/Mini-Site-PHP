@@ -1,0 +1,54 @@
+@font-face {
+    font-family: monkey;
+    src: url(Gomo.ttf);
+  }
+  body{
+    background-color: rgb(194, 245, 194);
+  }
+  #nomepag{
+    position: relative;
+    font-size:120px;
+    font-family: monkey;
+    color: rgb(40, 117, 40);
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+  #subtitulo1{
+    position: relative;
+    margin: 0px;
+    font-family: cursive;
+    margin-left: 720px;
+  }
+  DIV.container1 {
+    
+    background-color: rgb(133, 224, 125);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    
+
+  }
+
+  .links{
+    padding: 10px;
+    font-size: 100%;
+    border: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px ;
+    background-color: green;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  #img1{
+    position: relative;
+    top: 50px;
+  }
+
+  #rodape{
+    position: relative;
+    top: 50px;
+  }
