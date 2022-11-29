@@ -17,8 +17,8 @@
        echo "<h3>Página Cadastrada com sucesso!</h3><br>";
        echo "<a href='?pg=inserir'>
        Cadastrar Novamente</a><br>";
-       echo "<a href='?pg=listar'>
-       Voltar para o Inicio</a><br>"
+       echo "<a href='?pg=listar'>;
+       Voltar para o Inicio</a><br>";
     }
 
 ?>

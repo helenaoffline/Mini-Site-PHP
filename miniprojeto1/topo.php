@@ -7,6 +7,6 @@
 	</left>
 	<center>
 		<h1 id=nomepag>Ilha da Macacada</h1>
-		<h2 id=subtitulo1>Vende-se macacos</h2>
+		<h2 id=subtitulo1>Ajude macacos</h2>
 	</center>
 </header>

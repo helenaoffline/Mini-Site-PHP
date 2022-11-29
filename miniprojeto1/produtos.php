@@ -1,16 +1,11 @@
-<?php
+<div id=produtos>
 
-$sql = "SELECT * FROM paginas WHERE id=2";
-
-$todos = mysqli_query($conn, $sql);
-
-while ($dados=mysqli_fetch_array($todos)) {?>
-
-<h2><?=$dados['titulo'];?></h2>
-<div>
-    <p>
-    <?=$dados['descricao'];?>
-    </p>
+	<?php
+	$sql = mysqli_query($conn,"SELECT * FROM produtos ORDER BY id");
+	while($tabela = mysqli_fetch_array($sql)){
+	echo "<h1>$tabela[nome]</h1>";
+	echo "<h3>R$ $tabela[valor]</h3>";
+	echo "<h4>$tabela[descricao]</h4>";
+	}
+	?>
 </div>
-
-<?php } ?>

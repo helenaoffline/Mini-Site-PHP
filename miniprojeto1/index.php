@@ -8,6 +8,10 @@
 </head>
 <body>
 	<?php
+
+	session_start();
+		$_SESSION;
+
 		include_once('topo.php');
 
 		include_once('menu.php'); 

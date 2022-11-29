@@ -21,7 +21,6 @@
 
   <body class="text-center">
     <form class="form-signin" action="acesso.php" method="post">
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Área Restrita</h1>
       <label for="inputEmail" class="sr-only">Usuário</label>
       <input type="text" name="login" class="form-control" placeholder="usuario" required autofocus>
