@@ -10,53 +10,15 @@
 </div>
 
 <h1 id=subtitulo2>Doadores</h1>
+<br>
 
+<hr id=linha>
 <?php
-
-$sql = "SELECT * FROM doar WHERE id=1";
-
-$todos = mysqli_query($conn, $sql);
-
-while ($dados=mysqli_fetch_array($todos)) {?>
-
-<h2>Nome: <?=$dados['nome'];?></h2>
-<div>
-    <p>Valor: 
-    <?=$dados['valor'];?>
-    </p>
-</div>
-
-<?php } ?>
-
-<?php
-
-$sql = "SELECT * FROM doar WHERE id=2";
-
-$todos = mysqli_query($conn, $sql);
-
-while ($dados=mysqli_fetch_array($todos)) {?>
-
-<h2>Nome: <?=$dados['nome'];?></h2>
-<div>
-    <p>valor: 
-    <?=$dados['valor'];?>
-    </p>
-</div>
-
-<?php } ?>
-<?php
-
-$sql = "SELECT * FROM doar WHERE id=3";
-
-$todos = mysqli_query($conn, $sql);
-
-while ($dados=mysqli_fetch_array($todos)) {?>
-
-<h2><?=$dados['nome'];?></h2>
-<div>
-    <p>
-    <?=$dados['valor'];?>
-    </p>
-</div>
-
-<?php } ?>
+	$sql = mysqli_query($conn,"SELECT * FROM doar ORDER BY id");
+	while($tabela = mysqli_fetch_array($sql)){
+	echo "<h2>$tabela[nome]</h2>";
+    echo "<h3>$tabela[email]</h3>";
+	echo "<h3>R$ $tabela[valor]</h3>";
+	}
+	?>
+<hr>
